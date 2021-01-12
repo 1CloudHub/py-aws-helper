@@ -26,9 +26,7 @@ Assuming that the [configuration of AWS CLI](https://docs.aws.amazon.com/cli/lat
 	output = s3objectfinder.find_object(bucket=bucket, file_name=file_name)
 	print('Total objects fetched: ', output['total_objects_fetched'])
 	print('Total objects matched: ', output['total_objects_matched'])
-	for key in output['matched_keys']:
-		print('Key: ', key)
-    
+	print('Matched keys list: ', output['matched_keys'])
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other arguments:
 
