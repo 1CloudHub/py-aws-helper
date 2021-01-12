@@ -10,7 +10,7 @@ requires = [
 
 setup(
     name='py_aws_helper',
-    version='1.3',
+    version='1.4',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='Helper for AWS services like S3 written in python...',
