@@ -7,11 +7,11 @@ requires = [
 
 setup(
     name='py_aws_helper',
-    version='0.0.3',
+    version='0.0.4',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='Helper for AWS services like S3 written in python...',
-    # long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     install_requires=requires,
     url='https://github.com/1CloudHub/py_aws_helper.git',
     author='Sripranav P',
