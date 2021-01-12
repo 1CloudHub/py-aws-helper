@@ -1,16 +1,13 @@
 from setuptools import setup, find_packages
 
 requires = [
-    'boto3>=1.16.52,<1.17.0',
-    'botocore>=1.19.52,<1.20.0',
-    'jmespath>=0.10.0,<0.11.0',
-    's3transfer>=0.3.4,<0.4.0'
+    'boto3'
 ]
 
 
 setup(
     name='py_aws_helper',
-    version='1.9',
+    version='0.0.1',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='Helper for AWS services like S3 written in python...',
