@@ -4,9 +4,9 @@ Helper for AWS services like S3 written in python...
 
 ### Prerequisites
 
- •	IAM user with read access to S3 and its secret keys
- •	AWS CLI configured with the secret keys
- •	Python, Pip
+ •	IAM user with read access to S3 and its secret keys<br>
+ •	AWS CLI configured with the secret keys<br>
+ •	Python, Pip<br>
 
 
 ### Getting Started
@@ -32,6 +32,6 @@ Assuming that the [configuration of AWS CLI](https://docs.aws.amazon.com/cli/lat
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other arguments:
 
-The s3object finder module can take in two additional paramters other than the bucket and file_name namely , "prefix" and "delimiter" whose values have been initiated as empty strings.
+The s3object finder module can take in two additional paramters other than the bucket and file_name namely , "prefix" and "delimiter" whose default values have been initiated as empty strings.
 
 The corresponding documentation for populating the "prefix" and "delimiter" arguments can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/ListingKeysHierarchy.html)
