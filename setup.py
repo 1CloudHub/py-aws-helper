@@ -8,7 +8,7 @@ setup(
     description='Helper for AWS services like S3 written in python...',
     long_description=open('README.md').read(),
     install_requires=['boto3'],
-    url='https://github.com/1CloudHub/py-aws-helper.git',
+    url='https://github.com/1CloudHub/py_aws_helper.git',
     author='Sripranav P',
     author_email='sripranav@1cloudhub.com'
 )

@@ -4,7 +4,7 @@ import boto3
 s3_client = boto3.client('s3')
 
 
-def find_object(bucket, file_name, prefix='', delimiter='/'):
+def find_object(bucket, file_name, prefix='', delimiter=''):
     """
     Function to iteratively call the ListObjects API of S3 under a given bucket, prefix and delimiter.
     :param bucket: bucket name
@@ -27,7 +27,14 @@ def find_object(bucket, file_name, prefix='', delimiter='/'):
             Marker=marker
         )
 
-        total_objects_fetched += len(get_prefixes['Contents'])
+        try:
+            total_objects_fetched += len(get_prefixes['Contents'])
+        except KeyError:
+            # If no objects are returned, 'Contents' attribute will not be returned
+            return ({'total_objects_fetched': total_objects_fetched,
+                     'total_objects_matched': 0,
+                     'matched_keys': []})
+
         logging.info('Processing fetched objects...')
         for key_dict in get_prefixes['Contents']:
             if file_name == list(key_dict['Key'].split('/'))[-1]:
