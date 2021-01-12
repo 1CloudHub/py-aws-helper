@@ -12,7 +12,7 @@ Prerequisites
  •	Python, Pip
 
 Getting Started
-------------
+------------------
 
 Assuming that the `configuration of AWS CLI <https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html>`__ using the corresponding secret keys of the IAM user, set up your environment using Python and virtualenv and install the library using pip once the virtual  environment is activated:
 
@@ -21,7 +21,7 @@ Assuming that the `configuration of AWS CLI <https://docs.aws.amazon.com/cli/lat
     $ pip install py-aws-helper
 
 Using s3objectfinder
-------------
+------------------------
 
 Sample snippet:
 
