@@ -6,10 +6,10 @@ Helper for AWS services like S3 written in python...
 
 Prerequisites
 ---------------
-
- •	IAM user with read access to S3 and its secret keys<br>
- •	AWS CLI configured with the secret keys<br>
- •	Python, Pip
+ 
+ * IAM user with read access to S3 and its secret keys
+ * AWS CLI configured with the secret keys
+ * Python, Pip
 
 Getting Started
 ------------------
